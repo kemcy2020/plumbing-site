@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("service.jpg" );
+    background-position: center;
+    background-size: cover;
+    position:relative ;
+
+}
+.header .logo i{
+    font-size: 100px;
+    color: white;
+
+}
+--- .navbars{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center ;
+ 
+ }
+
+ .navbars{
+    flex: 3;
+    text-align: right ;
+ }
+ .navbars ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 12px;
+    position: relative;
+ }
+ .navbars ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+ } 
+
+ .navbars ul li::after{
+    content:'' ;
+    width: 0%;
+    height: 2px;
+    background: royalblue;
+    display: block;
+    margin: auto; }
+ .navbars ul li:hover::after{
+    width: 100%;
+
+ }
+
+ .login {
+    position: relative; /* Position the dropdown menu relative to this element */
+}
+
+.login.login{
+    display: none; /* Hide the sub-dropdown by default */
+    position: absolute;
+    top: 100%; /* Position the sub-dropdown below the parent element */
+    left: 0; /* Align the sub-dropdown with the left edge of the parent element */
+    background-color: #333;
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+}
+
+.login:hover.login{
+    display: block; /* Show the sub-dropdown on hover */
+}
+
+.login.login li {
+    margin: 5px 0;
+
+}
+
+.login.login a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+}
+
+ul li a:hover {
+    background: transparent;
+
+}
+ul li:hover ul.login{
+    display: block;
+}
+
+
+
+
+ .textbox{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50% );
+    text-align: center;
+ }
+ .textbox h1{
+    font-size: 79px;
+ }
+
+ .textbox p{
+ margin: 10px 0 40px;
+ font-size: 25px;
+color: white;
+ }
+
+label{
+    font-size: 40px;
+    color: white;
+}
+h1{
+       text-align: center;
+        font-size: 30px;
+        padding-top: 100px;
+        padding-bottom: 20pxS;
+    }
+.services{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      padding-top: 15px;
+    }
+    
+    
+    .services label{
+        font-size: 20px;
+        margin-top: 10px;
+        color: black;
+        padding:20px ;
+    }
+    .service-item {
+      width: 200px;
+      margin: 15px;
+      text-align: center;
+      position: relative;
+    }
+    /* Add this to your existing CSS or create a new CSS file */
+
+/* Style for the service items */
+.services .service-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the image */
+.services .service-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style for the text overlay */
+.services .service-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity */
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.services .service-item:hover {
+  transform: scale(1.1); /* Adjust the scale factor for zoom effect */
+}
+
+.services .service-item:hover .overlay {
+  opacity: 1;
+}
+
+    
+    .service-item h3{
+      margin: 10px;
+      color: black;
+    }
+   
+    
+    .description {
+      position: relative;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      color: black;
+      font-size: 10px;
+      font-family: arial;
+  
+    }
+    .hbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid whitesmoke;
+    padding:  12px 34px;
+    background: lightskyblue;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+ }
+
+ .hbtn:hover {
+    border: 2px solid royalblue;
+    background: royalblue;
+    transition: 1s ;
+ }
+ .why {
+    
+    text-align: center;
+    padding-top: 50px;
+
+ }
+ .why{
+    font-size: 15px;
+ }
+ .why p{
+    font-size: 10px;
+ }
+ 
+
+
+        
+
+
+
+.about{
+    padding-top: 50px;
+}
+}
+.about img{
+    height: auto;
+    width: 350px;
+}
+.about-text{
+    width: 500px;
+}
+
+.main{
+    width: 1100px;
+    max-width: 95%;
+    margin:0 auto ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+.about-text h1{
+    color: black;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom:25px;
+    letter-spacing:2px ;
+}
+span{
+    color: blue;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.about-text p{
+    color: black;
+    line-height: 28px;
+    font-size: 13px;
+    font-family: arial;
+    margin-bottom:45px ;
+}
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px;
+  text-align: left;
+}
+
+ @media(max-width:700px){
+ .textbox hi{
+    font-size: 20px;
+ }
+ .navbars ul li {
+    display: block;
+ }
+ .navbars{
+    position: absolute;
+    background: royalblue;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+ }
+
+
+

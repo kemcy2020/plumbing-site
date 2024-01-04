@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact form</title>
+	<link rel="stylesheet" type="text/css" href="cont.css">
+</head>
+<body>
+	<div class="container">
+    <header>
+      <h1> Contact Us</h1>
+ 
+   
+    </header>
+
+      <div class="content">
+        
+                    <div class="content-form">
+                <section>
+            <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                    <h2>Address</h2>
+                
+                     <p>
+                      SNAPPLUMB<br>
+                      hq office
+                      Ngara, Fig Tree<br>
+                      Nairobi
+                      
+                      </p>
+
+                </section>
+                <section>
+
+                   <i class="fa fa-phone fa-2x " aria-hidden="true"></i>
+                    <h2>Phone</h2>
+                    <p>0798476530</p>
+
+                </section>
+                <section>
+                   <i class="fa fa-envelope fa-2x " aria-hidden="true"></i>
+                     <h2> Email</h2>
+                     <p>snapplumb@gmail.com</p>
+                </section>
+                 
+               </div>
+
+        </div>
+        <form action=" http://localhost/non/contact.php" method="POST">
+          <div class="form">
+            <div class="right">
+              <div class="contact-form">
+                   <input type="text" name="full_name" required>
+                   <span> Full name </span>
+             
+               <div class="contact-form">
+                   <input type="E-mail Id" name="email" required>
+                   <span> Email</span>
+              </div>
+
+              <div class="contact-form">
+                   <textarea name="message"> </textarea> 
+                    <span> Type your message....</span>
+              </div>
+              
+                 <div class="contact-form">
+                   <input type="submit" name="submit"> 
+
+                
+              </div>
+              </div>
+             </div>
+            
+          </div>
+          
+        </form>
+
+</body>
+ <footer>
+    <p>&copy; 2023 SnapPlum. All rights reserved.</p>
+  </footer>
+</html>

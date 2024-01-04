@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>order</title>
+	<link rel="stylesheet" type="text/css" href="order.css">
+</head>
+<body>
+	 <section>
+	   <h1> Order Service</h1> 
+    
+    <form  action="http://localhost/non/order.php" method="POST" id="orderForm" class="container"  >
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="location">Your Location:</label>
+        <input type="text" id="location" name="location" required><br>
+
+        <label for="file">Upload Image:</label>
+        <input type="file" id="file" name="file" accept="image/*" required><br>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+            <option value="pipe-repair">Pipe Repair</option>
+            <option value="leak-fix">Leak Fix</option>
+            <option value="installation">Installation</option>
+        </select><br>
+
+        <button type="submit">Submit Order</button>
+    </form>
+
+</section>
+
+
+</body>
+</html>
